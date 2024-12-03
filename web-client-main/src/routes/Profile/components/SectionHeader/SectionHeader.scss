@@ -1,0 +1,42 @@
+@import 'src/shared/variables.scss';
+
+.section_header {
+  width: 100%;
+  display: inline-flex;
+  text-align: left;
+
+  &__name {
+    font-size: $font-normal;
+    font-weight: $light-weight;
+  }
+
+  &__item {
+    color: $white;
+    margin-top: 2px;
+    font-size: 14px;
+
+    &:hover {
+      color: $gray;
+      text-decoration: none;
+    }
+  }
+
+  &__name,
+  &__item {
+    &-active {
+      color: $gray;
+      margin-top: 2px;
+      font-size: 14px;
+
+      &:hover {
+        color: $gray;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @include desktop {
+    display: block;
+    text-align: center;
+  }
+}

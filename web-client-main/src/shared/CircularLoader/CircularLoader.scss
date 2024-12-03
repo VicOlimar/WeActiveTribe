@@ -1,0 +1,52 @@
+.circular-loader {
+  // Required SHITE
+  // ====================================
+  $circle-count: 13;
+  $loader-proportion: 100px;
+  $animation_config: (name: circularSpin,
+      duration: 1s,
+      timing: ease-in-out,
+      iteration: infinite,
+      direction: alternate,
+      fill-mode: both);
+
+  @function sh-setup($config) {
+    @return zip(map-values($config)...);
+  }
+
+  @keyframes circularSpin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @for $i from 1 through $circle-count {
+    svg:nth-of-type(#{$i}):not(#circle-middle) {
+      transform: rotate(($i * (360/($circle-count - 1))) + deg);
+    }
+  }
+
+  animation: sh-setup($animation_config);
+  height: $loader-proportion;
+  margin: auto;
+  width: $loader-proportion;
+
+  svg:not(#circle-middle) {
+    animation: sh-setup($animation_config);
+    position: absolute;
+    top: -50%;
+    left: 0;
+    transform-origin: bottom center;
+  }
+
+  &__message {
+    font-size: 14px;
+    padding: 20px 0;
+  }
+
+  &__container {
+    padding-top: 25px;
+    width: 100%;
+    text-align: center;
+  }
+}

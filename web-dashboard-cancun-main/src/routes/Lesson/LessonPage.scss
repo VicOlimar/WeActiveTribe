@@ -1,0 +1,143 @@
+@import "src/shared/variables.scss";
+
+.lesson {
+  &__search{
+    &-grid {
+        width: 100%;
+        height: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: stretch;
+        grid-column-gap: 50px;
+        margin-bottom: 20px;
+        &__return {
+            grid-row-start: 2;
+            grid-row-end: span 1;
+        }
+        &__label {
+            grid-column-start: 2;
+            grid-column-end: span 1;
+            grid-row-start: 1;
+        }
+        &__cancel {
+            grid-column-start: 2;
+            grid-column-end: span 1;
+            grid-row-start: 2;
+        }
+        &__button {
+            grid-column-start: 3;
+            grid-column-end: span 1;
+            grid-row-start: 2;
+        }
+    }
+}
+}
+
+
+.print-btn-row {
+  margin-top: 3rem;
+  margin-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lesson_section {
+  background-size: cover;
+
+  &__indications {
+    padding: 1rem 8rem;
+    float: right;
+    color: $white;
+
+    &__first {
+      display: inline-flex;
+      padding-right: 2rem;
+
+      &__icon {
+        margin: 4px 8px 0 0;
+        width: 15px;
+        height: 15px;
+        border: solid 2px #ffffff;
+        border-radius: 50%;
+
+        &-we-ride {
+          background-color: $we-ride-color;
+        }
+
+        &-we-hiit {
+          background-color: $we-hiit-color;
+        }
+
+        &-disable {
+          background-color: $red;
+        }
+      }
+    }
+
+    &__second {
+      display: inline-flex;
+      padding-right: 2rem;
+
+      &__icon {
+        margin: 4px 8px 0 0;
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        border: solid $white 2px;
+        border-radius: 50%;
+      }
+    }
+
+    &__third {
+      display: inline-flex;
+      padding-right: 2rem;
+
+      &__icon {
+        margin: 4px 8px 0 0;
+        width: 15px;
+        height: 15px;
+        border: solid 2px #ffffff;
+        border-radius: 50%;
+      }
+
+      &-disable {
+        background-color: #ff0000;
+      }
+    }
+
+    @include desktop {
+      position: absolute;
+      width: 100%;
+
+      &__first,
+      &__second {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+      }
+      &__third {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+      }
+    }
+  }
+
+  &__content {
+    padding: 5rem 0 0 0;
+    min-height: 80vh;
+  }
+}
+
+.unlock-modal {
+  &__buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    .btn {
+      margin-left: 30px;
+    }
+  }
+}

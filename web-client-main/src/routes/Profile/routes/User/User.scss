@@ -1,0 +1,36 @@
+@import 'src/shared/variables.scss';
+
+.user {
+
+  &__required::after {
+    content: '*';
+    color: white;
+    font-size: $font-extra-big;
+    top: 1px;
+    padding: 0 3px;
+    position: absolute;
+  }
+
+  &__input {
+    background: transparent;
+    border: solid 1px $white;
+    color: $white;
+    margin: .5rem 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  /**
+  React datepicker styles
+  **/
+
+  .react-datepicker__input-container input {
+    background: transparent;
+    border: solid 1px $white;
+    color: $white;
+    margin: .5rem 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+}

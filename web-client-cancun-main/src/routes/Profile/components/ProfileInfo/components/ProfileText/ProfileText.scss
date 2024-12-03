@@ -1,0 +1,13 @@
+@import 'src/shared/variables.scss';
+
+.profile-text {
+  margin: .5rem 0;
+  color: $white;
+  font-weight: $light-weight;
+  text-align: left;
+  font-size: $font-small;
+
+  @include desktop {
+    text-align: center;
+  }
+}

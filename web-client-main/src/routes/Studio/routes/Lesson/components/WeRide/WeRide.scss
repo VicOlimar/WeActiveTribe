@@ -1,0 +1,78 @@
+@import 'src/shared/variables.scss';
+
+.we_ride {
+  position: relative;
+  padding: 2rem 0 0 0;
+  text-align: center;
+  min-height: 50vh;
+  enable-background:new 0 0 498 264;
+
+  circle, ellipse {
+    z-index: 3;
+  }
+
+  &__layout {
+    position: relative;
+    z-index: 3;
+    height: 600px;
+    width: 100%;
+  }
+
+  .place {
+
+    circle,
+    ellipse,
+    text {
+      transition: all .3s;
+      fill: none;
+    }
+
+    circle:hover,
+    text:hover{
+      cursor: pointer;
+    }
+
+    circle {
+      //fill: #E5E5E4;
+    }
+
+    text {
+      fill: $white;
+      font-size: 8px;
+    }
+
+    &:hover {
+      circle, ellipse {
+        fill: $we-ride-color;
+        cursor: pointer;
+      }
+
+      text {
+        fill: $white;
+        cursor: pointer;
+      }
+    }
+
+    &__reserved {
+      circle, ellipse {
+        fill: $we-ride-color;
+        cursor: none;
+      }
+
+      text {
+        fill: $white;
+        cursor: none;
+      }
+
+      ellipse:hover,
+      circle:hover,
+      text:hover {
+        cursor: default;
+      }
+    }
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}

@@ -1,0 +1,43 @@
+@import 'src/shared/variables.scss';
+
+$min-height: 362px;
+$animation-time: 300ms;
+$height-transition: height $animation-time $animation-time,
+opacity 300ms 600ms;
+
+.credit_details_modals {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  &__title {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+
+  &__credits {
+    padding: 30px 0;
+  }
+
+  &__empty {
+    text-align: center;
+    font-size: 16px;
+    color: $primary-color;
+  }
+
+  .credit_type {
+    &__text, &__value {
+      margin: 10px 0;
+    }
+    &__ text {
+      font-weight: 600;
+    }
+  }
+}

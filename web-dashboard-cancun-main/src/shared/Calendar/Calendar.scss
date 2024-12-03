@@ -1,0 +1,34 @@
+@import 'src/shared/variables.scss';
+
+.calendar {
+  min-width: 100%;
+  .row {
+    margin: 0;
+  }
+  background: $white;
+  padding: 0 5px;
+  border-radius: 10px;
+  &__header {
+    text-align: left;
+    width: 100%;
+
+    span {
+      cursor: pointer;
+    }
+    
+    @include desktop {
+      font-size: $font-very-small;
+      text-align: center;
+    }
+  }
+  &__body {
+    min-height: 400px;
+    box-shadow: 0 0 33.4px 4.6px rgba(1, 0, 2, 0.17);
+    padding-bottom: 3rem;
+  }
+
+  &__divider {
+    position: relative;
+    top: -1px;
+  }
+}

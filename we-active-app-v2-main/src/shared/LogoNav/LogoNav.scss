@@ -1,0 +1,35 @@
+@import '../../shared/variables.scss';
+
+.navbar {
+  &__linearGradient {
+    width: 100%;
+  }
+  &__pattern {
+    width: 100%;
+  }
+  &__mainContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    width: 40%;
+  }
+  &__back {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 5%;
+
+    &__icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+}

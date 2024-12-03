@@ -1,0 +1,80 @@
+@import 'src/shared/variables.scss';
+
+.app-nav{
+    display: flex;
+    justify-content: space-between;
+    &__img-row{
+        &__image{
+            max-width: $navbar-height + 40;
+            margin-left: 30px;
+            filter: brightness(0) invert(1);
+        }
+    }
+    &__sidebar-button {
+        display: none;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between !important;
+    position: fixed;
+    top: 0;
+    height: $navbar-height;
+    background-color: $background-black !important;
+    margin-left: $sidebar-width;
+    .navbar-brand {
+        height: 100%;
+        img {
+            height: 100%;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+    }
+    .navbar-nav {
+        .nav-username {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.text-orange {
+    color: #d05527;
+}
+.text-white {
+    color: white;
+}
+
+
+p {
+    margin-top: auto !important;
+    margin-bottom: auto !important; 
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        margin-left: 0px;
+    }
+    .app-nav {
+        &__sidebar-button{
+            display: block;
+            &-invisible{
+                border: 0px;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}

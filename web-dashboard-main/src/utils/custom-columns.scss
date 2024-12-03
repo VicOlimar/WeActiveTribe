@@ -1,0 +1,36 @@
+@mixin make-grid-columns-custom($columns, $name, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  // Common properties for all breakpoints
+  %grid-column {
+    position: relative;
+    width: 100%;
+    padding-right: $gutter / 2;
+    padding-left: $gutter / 2;
+  }
+
+  @each $breakpoint in map-keys($breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+    // Allow columns to stretch full width below their breakpoints
+    .col#{$infix}-#{$name} {
+      @extend %grid-column;
+    }
+
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+
+      .col#{$infix}-#{$name} {
+        @include make-col($columns, $grid-columns);
+      }
+
+      // `$columns - 1` because offsetting by the width of an entire row isn't possible
+      @if not ($infix == "" and $columns == 0) { // Avoid emitting useless .offset-0
+        .offset#{$infix}-#{$name} {
+          @include make-col-offset($columns, $grid-columns);
+        }
+      }
+    }
+  }
+}
+
+@include make-grid-columns-custom(7, 'seventh');
+@include make-grid-columns-custom(5, 'fifth');

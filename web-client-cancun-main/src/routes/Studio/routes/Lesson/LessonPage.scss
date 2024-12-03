@@ -1,0 +1,83 @@
+@import "src/shared/variables.scss";
+
+.lesson_section {
+  background-size: cover;
+  background-position: center;
+
+  &__description {
+    text-align: center;
+    color: $white;
+    padding-right: 2rem;
+
+    &-link {
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    @include desktop {
+      padding-right: 0;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__indications {
+    padding: 1rem 4rem;
+    float: right;
+    color: $white;
+
+    &__first {
+      display: inline-flex;
+      padding-right: 2rem;
+
+      &__icon {
+        margin: 4px 8px 0 0;
+        width: 15px;
+        height: 15px;
+        border: solid 2px #ffffff;
+        border-radius: 50%;
+
+        &-we-ride {
+          background-color: $we-ride-color;
+        }
+
+        &-we-hiit {
+          background-color: $we-hiit-color;
+        }
+      }
+    }
+
+    &__second {
+      display: inline-flex;
+      padding-right: 2rem;
+
+      &__icon {
+        margin: 4px 8px 0 0;
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        border: solid $white 2px;
+        border-radius: 50%;
+      }
+    }
+
+    @include desktop {
+      text-align: center;
+      display: block;
+      position: absolute;
+      width: 100%;
+
+      &__first,
+      &__second {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  &__content {
+    padding: 5rem 0 0 0;
+    min-height: 80vh;
+  }
+}

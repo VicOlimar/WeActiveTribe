@@ -1,0 +1,39 @@
+@import 'src/shared/variables.scss';
+
+.app-header {
+  background-color: $gray;
+  min-height: 68px;
+  padding: 0 3em;
+  margin: 0;
+  width: 100%;
+  color: $white;
+  
+
+  &__left {
+    text-align: center;
+
+    @include desktop {
+      margin: 1rem 0 0 0;
+    }
+  }
+
+  &__right {
+    text-align: right;
+
+    @include desktop {
+      margin: 1rem 0;
+      text-align: center;
+    }
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: 0px !important;
+} 

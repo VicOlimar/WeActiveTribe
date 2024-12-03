@@ -1,0 +1,19 @@
+@import 'src/shared/variables.scss';
+
+.header-dropdown {
+  .header-button {
+    padding: 0;
+    background: none;
+    border: none;
+
+    &:focus, &:hover {
+      box-shadow: none !important;
+      background-color: transparent !important;
+      outline: none;
+    }
+  }
+
+  @include desktop {
+    font-size: $font-very-small;
+  }
+}

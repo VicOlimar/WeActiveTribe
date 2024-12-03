@@ -1,0 +1,18 @@
+.lesson{
+    .button-row {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .btn {
+        min-width: 150px;
+        width: fit-content;
+    
+    }
+    &__clean-button{
+        border: none;
+        color: transparent;
+        background-color: transparent;
+        margin-top: 37px;
+    }
+}

@@ -1,0 +1,33 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    working_dir: /myapp
+    command: gulp watch
+    volumes:
+      - .:/myapp
+      - node_modules:/myapp/node_modules
+    ports:
+      - "${SERVER_PORT:-8888}:8888"
+    stdin_open: true
+    tty: true
+    depends_on:
+      - db
+    links:
+      - db
+
+  db:
+    image: postgres
+    volumes:
+      - datavolume:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${DB_NAME:-we_cycling}
+      POSTGRES_USER: ${DB_USER:-we_cycling}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-we_password}
+    ports:
+      - "${DB_EXPOSE_PORT:-5432}:5432"
+
+volumes:
+  datavolume:
+  node_modules:

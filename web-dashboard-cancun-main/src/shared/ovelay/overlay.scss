@@ -1,0 +1,19 @@
+.overlay {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1060; //navbar has 1030 and modal has 1050, so to cover them user 1060
+    transition: all .3s ease-in-out;
+
+    &__child {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

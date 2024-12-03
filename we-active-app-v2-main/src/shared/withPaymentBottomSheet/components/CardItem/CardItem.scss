@@ -1,0 +1,21 @@
+@import 'src/shared/variables.scss';
+
+.card-item {
+  &__container {
+    padding: 1rem 1rem 0 1rem;
+    margin-right: 1rem;
+    background-color: #f0f0f0;
+  }
+
+  &__image {
+    width: 90px;
+    height: 90px;
+  }
+
+  &__digits {
+    text-align: center;
+    color: $gray;
+    padding-top: 10px;
+    padding-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,100 @@
+@import '../../shared/variables.scss';
+
+.profile {
+  &__mainContainer {
+    height: 100%;
+  }
+  &__content {
+    background-color: $background-black;
+  }
+  &__quickMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: $black-gray;
+  }
+  &__menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  &__iconContainer {
+    border-radius: 30px;
+    padding: 10px;
+    background-color: $transparent-gray;
+    margin-bottom: 5px;
+  }
+  &__menuIcon {
+    width: 30px;
+    height: 30px;
+  }
+  &__text {
+    color: white;
+    font-family: $main-font;
+    font-size: $font-medium;
+    padding: 10px 0;
+  }
+  &__buttonText {
+    text-align: center;
+  }
+  &__sectionHeader {
+    padding: 10px 0;
+    width: 90%;
+    margin: auto;
+
+    color: white;
+    font-family: $bold-font;
+    font-size: $font-big;
+  }
+  &__sectionCard {
+    background-color: $black-gray;
+    margin-bottom: 20px;
+  }
+  &__sectionContainer {
+    width: 90%;
+    margin: auto;
+    padding: 0 10px 5px;
+    margin-bottom: 10px;
+    border-width: 0.5px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: white;
+  }
+  &__subContainer {
+    width: 35px;
+  }
+  &__counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__button {
+    padding: 20px 30px;
+  }
+  &__logOut {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: $main-font;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+  }
+  &__icon {
+    margin: 10px 0;
+    width: 10px;
+    height: 15px;
+  }
+
+  &__icon_no_padding {
+    margin: 10px 0;
+    width: 10px;
+    height: 20px;
+  }
+}

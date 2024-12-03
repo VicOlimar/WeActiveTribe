@@ -1,0 +1,54 @@
+@import '../../shared/variables.scss';
+
+.editProfile {
+  &__content {
+    background-color: $black-gray;
+    padding: 5% 10%;
+  }
+  &__empty {
+    background-color: $black-gray;
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  &__inputHeader {
+    color: white;
+    font-family: $bold-font;
+    font-size: $font-small;
+  }
+  &__input {
+    color: white;
+    font-family: $main-font;
+    font-size: $font-big;
+    padding: 0;
+    margin-bottom: 5%;
+  }
+  &__datePicker {
+    color: white;
+  }
+  &__button {
+    padding: 20px 30px;
+  }
+  &__updateProfile {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: $main-font;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+  }
+  &__error {
+    color: red;
+    font-family: $main-font;
+    font-size: $font-small;
+  }
+  &__notifications_switch {
+    margin-top: 10px;
+  }
+}

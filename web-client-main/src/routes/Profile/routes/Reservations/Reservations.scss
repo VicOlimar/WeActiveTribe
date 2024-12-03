@@ -1,0 +1,89 @@
+@import 'src/shared/variables.scss';
+
+.reservations {
+
+  &__canceled {
+    background: #fff;
+    color: #212112;
+    padding: 5px;
+  }
+
+  &__decoration {
+    text-decoration: line-through;
+  }
+
+  &__studio,
+  &__instructor {
+    font-size: $font-small;
+    color: $white;
+  }
+
+  &__studio {
+    color: $white;
+    padding: 3px;
+    margin-right: 10px;
+
+    &-we-ride {
+      background: $we-ride-color;
+
+      img {
+        width: 50px;
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    &-we-hiit, &-online {
+      background: $we-hiit-color;
+
+      img {
+        width: 50px;
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  &__image {
+    width: 20px;
+    margin-left: 5px;
+
+    &-tertiary {
+      width: 15px;
+      margin: 0 5px 2px 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__tabs {
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    .active {
+      background-color: $primary-color !important; // Bootstrap styles conflict
+      border-color: $white !important; // Bootstrap styles conflict
+      color: $white !important; // Bootstrap styles conflict
+    }
+
+    .btn-primary:not(.active) {
+      background-color: transparent !important; // Bootstrap styles conflict
+      border-color: $white !important; // Bootstrap styles conflict
+      color: $white !important; // Bootstrap styles conflict
+    }
+  }
+
+  &__see_lesson {
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 5px;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,80 @@
+@import "src/shared/variables.scss";
+
+.studios {
+  position: relative;
+  margin: -6vh;
+  .col {
+    padding: 0px;
+  }
+  .card {
+    height: 100vh;
+    border-radius: 0px;
+    border: none;
+    background-blend-mode: darken;
+  }
+  &__left {
+    background-image: url("./images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__right {
+    background-image: url("./images//2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__online {
+    background-image: url("./images/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__body {
+    &__image-row {
+      display: flex;
+      justify-content: center;
+      &__image {
+        height: 80px;
+        max-width: 90%;
+        margin-top: 25vh;
+        margin-left: auto;
+        margin-right: auto;
+        filter: brightness(0) invert(1);
+
+        &-fixed-height {
+          height: 120px;
+        }
+      }
+    }
+
+    &__line {
+      margin-top: 100px;
+      border-bottom: 1px solid white;
+      width: 28vw;
+      min-width: 250px;
+      &-large {
+        margin-top: 140px;
+      }
+    }
+
+    &__button-row {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .btn {
+    background-color: black;
+    border-color: black;
+    width: 200px;
+    height: 50px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+  }
+
+  .report-btn {
+    position: fixed;
+    right: 50px;
+    top: 120px;
+    z-index: 2;
+  }
+}

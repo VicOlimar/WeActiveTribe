@@ -1,0 +1,104 @@
+@import 'src/shared/variables.scss';
+
+.app-pagination {
+  display: flex;
+  align-items: center;
+  .form-control{
+    border: 1px solid black;
+    color: black;
+  }
+  .active {
+    background-color: $light-gray;
+  }
+
+  .active-link {
+    background-color: $light-gray;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .prev-link{
+    display: block;
+    list-style-type: none; 
+    border: 1px solid black;
+    height: 40px;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .prev-link:hover {
+    background-color: gray;
+    border: 1px solid black;
+    color: black;
+  }
+
+  .break-link {
+    display: block;
+    list-style-type: none; 
+    border: 1px solid black;
+    height: 40px;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .break-link:hover {
+    background-color: gray;
+    border: 1px solid black;
+    color: black;
+  }
+
+  .next-link {
+    display: block;
+    list-style-type: none; 
+    border: 1px solid black;
+    height: 40px;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .next-link:hover {
+    background-color: gray;
+    border: 1px solid black;
+    color: black;
+  }
+
+  .page{
+    list-style-type: none; 
+    margin: 5px;
+  }
+
+  .page-link {
+    border: 1px solid black;
+    text-decoration: none;
+    width: fit-content;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .page-link:hover {
+    background-color: gray;
+    border: 1px solid black;
+    color: black;
+  }
+
+  .prev-class{
+    list-style-type: none; 
+  }
+
+  .next-class{
+    list-style-type: none; 
+  }
+}

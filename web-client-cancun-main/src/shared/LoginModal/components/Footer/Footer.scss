@@ -1,0 +1,9 @@
+@import 'src/shared/variables.scss';
+
+.footer {
+
+  &__button {
+    bottom: -49px;
+    position: absolute;
+  }
+}

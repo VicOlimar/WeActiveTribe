@@ -1,0 +1,39 @@
+.discount {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__search{
+        &-grid {
+            width: 100%;
+            height: 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            align-items: center;
+            justify-items: stretch;
+            grid-column-gap: 50px;
+            margin-bottom: 20px;
+            &__new-button {
+                grid-column-start: 3;
+                grid-column-end: span 1;
+                grid-row-start: 2;
+            }
+        }
+    }
+
+    &__card-row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        &__card-container {
+            margin: 10px;
+            padding: 0px;
+            border: 0px;
+            &__card {
+                margin: 0px;
+            }
+        }
+    }
+}

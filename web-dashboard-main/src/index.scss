@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap');
+@import './utils/variables.scss';
+
+// Import Bootstrap and its default variables
+@import '~font-awesome/css/font-awesome.css';
+@import '~bootstrap/scss/bootstrap.scss';
+@import './utils/custom-columns.scss';
+@import './utils/custom.scss';
+
+
+h2 {
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: #58318b;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: #1b1b1b;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.text-center {
+  text-align: center !important;
+}

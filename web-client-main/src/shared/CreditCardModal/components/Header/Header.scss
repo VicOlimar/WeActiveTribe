@@ -1,0 +1,27 @@
+@import 'src/shared/variables.scss';
+
+.modal_header {
+  border-radius: 7px 7px 0 0;
+  background: $black;
+  color: #fffeff;
+  padding: 1rem 3rem;
+
+  &__cancel {
+    color: $red;
+    border: none;
+    background: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @include desktop {
+    text-align: center;
+    padding: 1rem;
+
+    &__cancel {
+      padding-top: .7rem;
+    }
+  }
+}

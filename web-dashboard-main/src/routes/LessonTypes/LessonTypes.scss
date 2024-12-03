@@ -1,0 +1,17 @@
+.lesson_types {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__add_btn {
+    width: 100%;
+    max-width: 250px;
+    min-height: 40px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+  }
+}

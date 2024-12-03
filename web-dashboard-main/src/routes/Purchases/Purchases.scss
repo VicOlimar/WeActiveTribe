@@ -1,0 +1,106 @@
+@import "../../shared/variables.scss";
+
+.purchase {
+  &__pagination {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__search {
+    &-grid {
+      width: 100%;
+      height: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      justify-items: stretch;
+      grid-column-gap: 50px;
+      margin-bottom: 20px;
+      &__email {
+        grid-row-start: 2;
+        grid-row-end: span 1;
+      }
+      &__label {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+      }
+      &__label2 {
+        grid-column-start: 3;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+      }
+      &__label,
+      &__label2 {
+        margin-top: 1rem;
+      }
+      &__filter {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+      }
+      &__filter2 {
+        grid-column-start: 3;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+      }
+      &__print-report {
+        grid-column-start: 4;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+        margin-top: 1rem;
+      }
+      &__print {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &__table {
+    &__th {
+      font-size: 18px;
+      &__row {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &__td {
+      min-width: 200px;
+    }
+    &__buttons {
+      button {
+        background-color: transparent;
+      }
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__modal {
+    &__button-row {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-evenly;
+      .btn {
+        width: 40%;
+      }
+    }
+  }
+
+  button {
+    background-color: transparent;
+  }
+
+  &__toggle_message{
+      padding-top: 1rem;
+  }
+}

@@ -1,0 +1,18 @@
+@import 'src/shared/variables.scss';
+
+.line {
+  margin: 0 25px;
+  height: 100%;
+
+  &__white {
+    border-left: 1px solid $white;
+  }
+
+  &-horizontal {
+    border-color: $white;
+  }
+
+  @include desktop {
+    margin: 0 15px;
+  }
+}

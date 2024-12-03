@@ -1,0 +1,42 @@
+@import '../../../shared/variables.scss';
+
+.users_reservations {
+    padding: 0;
+    &__pagination {
+        display: flex;
+        justify-content: center;
+    }
+    &__table {
+        &__th{
+            font-size: 18px;
+        }
+    }
+    
+    &__header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        .header-title{
+            width: fit-content;
+        }
+    }
+    button {
+        border: none;
+        background-color: transparent;
+    }
+    &__modal {
+        &__button-row {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            .btn{
+                width: 40%;
+            }
+        }
+    }
+}
+
+.button-row{
+    display: flex;
+    justify-content: space-around;
+}

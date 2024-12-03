@@ -1,0 +1,28 @@
+@import './../variables.scss';
+
+.app-input {
+  width: 100%;
+  font-family: $font-family;
+
+  label {
+    font-size: $font-normal;
+    color: $text-black;
+    margin: 1rem 0;
+  }
+
+  select {
+    font-family: $font-family;
+    background: none;
+    color: $text-accent;
+    font-size: $font-normal;
+    font-weight: $light-weight;
+    width: 100%;
+    height: 46px;
+    margin: 10px 0;
+    display: inline-block;
+    box-sizing: border-box;
+
+    border-radius: 5px;
+    border: solid 1px #f0f0f0;
+  }
+}

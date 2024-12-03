@@ -1,0 +1,30 @@
+@import '../../shared/variables.scss';
+
+.paymentMethods {
+  &__content {
+    background-color: $black-gray;
+    padding: 5% 10%;
+    height: 100%;
+    flex: 1;
+  }
+  &__empty {
+    background-color: $black-gray;
+    height: 100%;
+    padding: 5px 10px;
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  &__text {
+    color: white;
+    font-family: $main-font;
+  }
+
+  &__rightAction {
+    width: 20px;
+    height: 20px;
+  }
+}

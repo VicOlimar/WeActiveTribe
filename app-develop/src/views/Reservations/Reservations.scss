@@ -1,0 +1,36 @@
+@import "../../shared/variables.scss";
+
+.reservations-list {
+  &__content {
+    background-color: $black-gray;
+    padding: 5%;
+  }
+  &__empty {
+    background-color: $black-gray;
+    height: 90%;
+    padding: 5px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  &__text {
+    color: $white;
+    font-family: $main-font;
+    text-align: center;
+  }
+
+  &__type_text {
+    color: $white;
+    font-family: $main-font;
+    text-align: center;
+    margin: 0 10px;
+    padding: 10px;
+
+    &__active {
+      border: solid $white 1px;
+      border-radius: 15px;
+    }
+  }
+}

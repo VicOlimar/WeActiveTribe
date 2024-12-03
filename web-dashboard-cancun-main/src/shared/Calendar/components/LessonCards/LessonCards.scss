@@ -1,0 +1,152 @@
+@import 'src/shared/variables.scss';
+
+.lessons {
+  margin-top: 7px;
+  &-empty {
+    h4 {
+      color: black;
+      text-align: center;
+      margin: 3rem 0;
+    }
+  }
+
+  .blue {
+    background: $light-blue; 
+    &:hover {
+      background: $darkened-blue;
+      cursor: pointer;
+
+      &>* {
+        color: $white;
+      }
+    }
+  }
+  
+  .pink {
+    background: $light-pink;
+    &:hover {
+      background: $darkened-pink;
+      cursor: pointer;
+
+      &>* {
+        color: $white;
+      }
+    }
+  }
+
+  .lesson {
+    &__card {
+
+      &-normal,
+      &-not-available {
+        min-height: 90px;
+        transition: all .5s;
+        padding: .5rem 1rem;
+        margin: 0 4px 8px 4px;
+
+        @include desktop {
+          min-height: 90px;
+          padding: 1rem .2rem;
+          margin: 0 1px 2px 1px;
+        }
+      }
+
+      &-normal {
+
+        &__name,
+        &__lessons {
+          color: white;
+        }
+
+        &__name {
+          @include desktop {
+            font-size: $font-very-small;
+          }
+        }
+
+        &__name,
+        &__lessons,
+        &__hour {
+          color: white;
+          margin-bottom: 0;
+        }
+
+        &__lessons {
+          font-size: 12px;
+
+          @include desktop {
+            display: none;
+          }
+        }
+
+        &__hour {
+          margin-top: .5rem;
+          color: white;
+
+          @include desktop {
+            margin-top: 2px;
+            font-size: $font-very-small;
+          }
+        }
+
+        &__not-available {
+          color: $white;
+        }
+
+        
+      }
+
+      &-not-available {
+        transition: all .5s;
+        border: solid 1px rgba(255, 255, 255, 0.11);
+        background-color: $light-gray;
+        color: black;
+
+        &__name,
+        &__lessons {
+          color: black;
+        }
+
+        &__name,
+        &__lessons,
+        &__hour {
+          margin-bottom: 0;
+          color: black;
+        }
+
+        &__name {
+          @include desktop {
+            font-size: $font-very-small;
+          }
+        }
+
+        &__lessons {
+          font-size: 12px;
+
+          @include desktop {
+            display: none;
+          }
+        }
+
+        &__hour {
+          margin-top: .5rem;
+          color: black;
+
+          @include desktop {
+            margin-top: 2px;
+            font-size: $font-very-small;
+          }
+        }
+
+        &__not-available {
+          color: $white;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background: $text-accent;
+        }
+      }
+    }
+  }
+}

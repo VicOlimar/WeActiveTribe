@@ -1,0 +1,29 @@
+@import 'src/shared/variables.scss';
+
+.app-pagination {
+
+  &__arrow {
+    width: 30px;
+  }
+
+  // Bootstrap Styles
+
+  .page-link {
+    background: none;
+    border: none;
+
+    color: $white;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .page-item.active .page-link {
+    top: -5px;
+    font-size: $font-big;
+    background-color: transparent;
+    font-weight: $bold-weight;
+  }
+}

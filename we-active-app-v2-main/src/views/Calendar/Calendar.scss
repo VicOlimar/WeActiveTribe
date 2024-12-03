@@ -1,0 +1,20 @@
+@import 'src/shared/variables.scss';
+
+.calendar {
+  flex: 1;
+  background-color: $black-gray;
+
+  &__loader_container {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__empty {
+    text-align: center;
+    font-weight: $bold-weight;
+    color: $white;
+    padding: 4rem 2rem;
+    font-size: $font-medium;
+  }
+}

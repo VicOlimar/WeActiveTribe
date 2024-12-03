@@ -1,0 +1,43 @@
+@import "../../../../../../shared/variables.scss";
+
+.item-header {
+  &__special {
+    padding: 9px 10px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__normal {
+    height: 80px;
+    padding: 15px 10px; // Design hotfix
+    border-radius: 10px 0 0 10px;
+  }
+
+  &__special {
+    &-text {
+      text-align: center;
+      color: $white;
+      font-size: $font-medium;
+      font-weight: $medium-weight;
+      text-transform: uppercase;
+    }
+  }
+
+  &__normal {
+    //min-width: 20%;
+    background-color: $we-ride-color;
+
+    &-credits,
+    &-text {
+      color: $white;
+      text-align: center;
+    }
+
+    &-credits {
+      font-size: $font-medium;
+    }
+
+    &-text {
+      font-size: $font-small;
+    }
+  }
+}

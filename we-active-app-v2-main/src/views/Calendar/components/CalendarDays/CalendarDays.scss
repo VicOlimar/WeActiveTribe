@@ -1,0 +1,21 @@
+@import 'src/shared/variables.scss';
+
+.calendar-days {
+  width: 100%;
+
+  &__column {
+    padding: 1.5rem 1rem;
+    width: 110px;
+
+    &__text,
+    &__lesson_type {
+      color: $white;
+      text-align: center;
+      font-size: $font-small;
+    }
+
+    &__lesson_type {
+      padding-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import 'src/shared/variables.scss';
+
+.app-footer {
+  padding: 2rem 3rem;
+  background: $black;
+
+  &__logo {
+    width: 100%;
+    max-width: 120px;
+  }
+
+  &__instagram {
+    width: 20px;
+  }
+
+  &__info {
+    font-size: $font-small;
+    display: inline-flex;
+
+    &__link {
+      color: #afafaf;
+
+      &:hover {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+    @include desktop {
+      margin: 2rem 0 0 0;
+    }
+  }
+
+  &__line {
+    margin: 0 10px;
+
+    &-gray {
+      border-color: #afafaf;
+    }
+  }
+  
+  @include desktop {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+}

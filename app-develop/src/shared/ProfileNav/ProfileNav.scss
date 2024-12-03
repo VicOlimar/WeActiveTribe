@@ -1,0 +1,25 @@
+@import "../../shared/variables.scss";
+
+.profileNav {
+  &__linearGradient {
+    width: 100%;
+    padding: 12% 10% 5% 10%;
+  }
+  &__pattern {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5% 10%;
+  }
+  &__text {
+    color: white;
+    font-family: $main-font;
+    font-size: $font-normal;
+    padding-bottom: 5px;
+  }
+  &__textAccent {
+    color: white;
+    font-family: $bold-font;
+    font-size: $font-big;
+  }
+}

@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    working_dir: /myapp
+    command: npm start
+    volumes:
+      - .:/myapp
+      - node_modules:/myapp/node_modules
+    ports:
+      - "${PORT:-3000}:3000"
+
+volumes:
+  node_modules:

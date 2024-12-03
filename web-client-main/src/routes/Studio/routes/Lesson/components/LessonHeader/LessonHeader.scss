@@ -1,0 +1,77 @@
+@import 'src/shared/variables.scss';
+
+.lesson_header {
+
+  &-mobile {
+    padding: 1rem 0 0 0;
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &-line {
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__left_side {
+    width: 100%;
+    text-align: left;
+    display: inline-flex;
+
+    &__link {
+      color: $white;
+
+      &:hover {
+        color: $gray;
+        text-decoration: none;
+      }
+    }
+
+    &__back {
+      height: 15px;
+    }
+
+    &__back_text {
+      padding-left: 2rem;
+    }
+
+    &__next_text {
+
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+
+  &__right_side {
+    float: right;
+
+    &__link {
+      color: $white;
+
+      &:hover {
+        color: $gray;
+        text-decoration: none;
+      }
+    }
+
+    &__next {
+      height: 15px;
+    }
+
+    &__next_text {
+      color: $white;
+      padding-right: 2rem;
+
+      &:hover {
+        color: $gray;
+        text-decoration: none;
+      }
+    }
+  }
+}

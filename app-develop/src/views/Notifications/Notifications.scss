@@ -1,0 +1,31 @@
+@import "../../shared/variables.scss";
+
+.notifications {
+  &__content {
+    background-color: $black-gray;
+    height: 100%;
+  }
+  &__empty {
+    background-color: $black-gray;
+    height: 100%;
+    padding: 5px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  &__text {
+    color: $white;
+    font-family: $main-font;
+    text-align: center;
+  }
+  &__error {
+    color: red;
+    font-family: $main-font;
+    font-size: $font-small;
+  }
+  &__notifications_switch{
+    margin-top: 10px;
+  }
+}

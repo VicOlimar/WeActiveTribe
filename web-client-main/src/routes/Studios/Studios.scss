@@ -1,0 +1,143 @@
+@import 'src/shared/variables.scss';
+@mixin transitions {
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.studios {
+  background: #151515;
+  height: $full-height-without-navbar;
+  position: relative;
+  top: 0;
+  width: 100%;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 !important;
+  display: flex;
+  &__side {
+    background: $background-black;
+    display: flex;
+    vertical-align: top;
+    height: 100vh;
+    cursor: pointer;
+    position: relative;
+    margin-left: -2px;
+    flex: 1;
+    z-index: 2;
+    min-height: 190px;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms all cubic-bezier(.19, 1, .22, 1);
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    &:hover & {
+      &__image {
+        opacity: 0;
+        &-hover {
+          opacity: 1;
+        }
+      }
+      &__logo {
+        filter: brightness(0) invert(1);
+      }
+    }
+    &__image {
+      @include transitions;
+      &-hover {
+        @include transitions;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    &__logo {
+      top: -30px;
+      position: relative;
+      @include transitions;
+      img {
+        width: 420px;
+        @include desktop {
+          width: 290px;
+        }
+      }
+    }
+    &__mobile {
+      &__logo {
+        top: -65px;
+        filter: brightness(0) invert(1);
+      }
+    }
+    @include desktop {
+      height: 42vh;
+      background-position: left top;
+      &:hover & {
+        &__image {
+          opacity: 0;
+          &-hover {
+            opacity: 0;
+          }
+        }
+        &__logo {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+  &__name {
+    font-size: $font-extra-big;
+    top: -30px;
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+    img {
+      width: 350px;
+    }
+    h2 {
+      -webkit-transform: $font-transform;
+      /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: $font-transform;
+      /* IE 9 */
+      transform: $font-transform;
+      /* Firefox 16+, IE 10+, Opera */
+      transform: $font-transform;
+    }
+    h3 {
+      font-size: $font-big;
+    }
+    h2,
+    h3 {
+      color: $white;
+    }
+    &-bold {
+      font-weight: $bold-weight;
+    }
+  }
+  @include desktop {
+    height: auto;
+    display: inherit;
+    overflow: hidden;
+  }
+  @include large {
+    height: auto;
+    display: inherit;
+    overflow: hidden;
+  }
+}

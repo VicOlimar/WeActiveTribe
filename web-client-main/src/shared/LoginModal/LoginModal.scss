@@ -1,0 +1,27 @@
+@import 'src/shared/variables.scss';
+
+$min-height: 362px;
+$animation-time: 300ms;
+$height-transition: height $animation-time $animation-time,
+opacity 300ms 600ms;
+
+.login__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  
+  &__form {
+    transition: $height-transition;
+  }
+
+  &__form.hide {
+    height: 0;
+    opacity: 0;
+  }
+
+  &__form.show {
+    opacity: 1;
+  }
+}

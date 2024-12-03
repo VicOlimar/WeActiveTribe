@@ -1,0 +1,27 @@
+@import "../../../../shared/variables.scss";
+
+.waiting-item {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+
+  &__studio {
+    width: 100px;
+    height: 80px;
+    margin: auto;
+  }
+
+  &__cancel {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__text {
+    color: $white;
+    font-family: $main-font;
+    text-align: center;
+  }
+}

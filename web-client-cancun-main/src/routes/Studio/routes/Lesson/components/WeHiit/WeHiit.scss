@@ -1,0 +1,70 @@
+@import 'src/shared/variables.scss';
+
+.we_hiit {
+  position: relative;
+  text-align: center;
+  min-height: 50vh;
+
+  path:hover,
+  text:hover,
+  rect:hover {
+    cursor: pointer;
+  }
+
+  path, rect {
+    fill: none;
+  }
+
+  &__layout {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .place {
+    path,
+    text,
+    rect {
+      transition: fill .3s;
+    }
+
+    path:hover, rect:hover {
+      fill: $we-hiit-color;
+    }
+
+    text {
+      fill: $white;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      path, rect {
+        fill: $we-hiit-color;
+      }
+    }
+
+    &__reserved {
+      path, rect {
+        fill: $we-hiit-color;
+        cursor: none;
+      }
+
+      text {
+        fill: $white;
+        cursor: none;
+      }
+
+      path:hover,
+      text:hover,
+      rect:hover {
+        cursor: default;
+      }
+    }
+  }
+
+  @include desktop {
+    padding: 5rem 0 0 0;
+  }
+}

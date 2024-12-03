@@ -1,0 +1,27 @@
+@import "src/shared/variables.scss";
+
+.cards {
+  &__label {
+    margin: .5rem 0;
+    color: $white;
+
+    &__image {
+      width: 20px;
+      margin-left: 5px;
+
+      &-secondary {
+        width: 15px;
+        margin: 0 0 2px 5px;
+      }
+
+      &-tertiary {
+        width: 15px;
+        margin: 0 5px 2px 0;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

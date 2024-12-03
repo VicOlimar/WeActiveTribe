@@ -1,0 +1,28 @@
+@import "src/shared/variables.scss";
+.plans {
+  &__scroll {
+    height: 100%;
+    width: 100%;
+    background-color: $black-gray;
+  }
+  &__content {
+    background-color: $black-gray;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+  }
+  &__empty {
+    background-color: $black-gray;
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  &__text {
+    color: white;
+  }
+}

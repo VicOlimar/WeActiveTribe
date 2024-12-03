@@ -1,0 +1,119 @@
+@import './variables.scss';
+
+$animation-time: 1s;
+.notification__section {
+
+  .notification__container {
+    display: inline-flex;
+    font-size: 14px;
+    visibility: hidden;
+    min-width: 250px;
+    //background-color: #313131; This comment is because design proporses, is a suggestion
+    background-color: $text-accent;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: #fff;
+    padding: 1em 1.5em;
+    position: fixed;
+    z-index: 3000;
+    left: 20px;
+    bottom: 0;
+    -webkit-transition: $animation-time ease;
+    transition: $animation-time ease;
+    transition-property: all;
+  }
+
+  .notification__container.visible {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein $animation-time;
+    animation: fadein $animation-time;
+  }
+
+  .notification__container.gone {
+    visibility: hidden;
+    -webkit-animation: fadeout $animation-time;
+    animation: fadeout $animation-time;
+  }
+
+  .notification__message, .notification__action, .notification__close {
+    padding: 5px;
+  }
+
+  .notification__message {
+    margin: 0;
+  }
+
+  .notification__action {
+    color: #d6054f;
+    background: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+    border: none;
+  }
+
+  .notification__action:hover, .notification__action:focus {
+    background-color: rgba(225, 0, 80, 0.08);
+    cursor: pointer;
+    outline: none;
+  }
+
+  .notification__close {
+    background: none;
+    border: none;
+  }
+
+  .notification__close:hover, .notification__close:focus {
+    outline: none;
+    cursor: pointer;
+  }
+
+  .notification__close:focus {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, .1);
+  }
+
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeout {
+    from {
+      bottom: 0;
+      opacity: 1;
+    }
+    to {
+      bottom: 0;
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeout {
+    from {
+      bottom: 0;
+      opacity: 1;
+    }
+    to {
+      bottom: 0;
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.reservations {
+    padding: 50px;
+    &__table {
+        margin-top: 20px;
+        &__th{
+            max-width: 25%;
+            width: 25%;
+        }
+        td{
+            padding: 10px;
+            margin: auto;
+        }
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        &-left {
+
+        }
+        &-right {
+             
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

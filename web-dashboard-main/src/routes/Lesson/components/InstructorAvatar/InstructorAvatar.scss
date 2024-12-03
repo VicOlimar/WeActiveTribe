@@ -1,0 +1,193 @@
+@import 'src/shared/variables.scss';
+
+$we-ride-image-width: 250px;
+$we-hiit-image-width: 170px;
+
+.instructor_avatar {
+
+  &__we_ride,
+  &__we_hiit,
+  &__we_ride-animation,
+  &__we_hiit-animation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .5s;
+    overflow: hidden;
+
+    &-animation {
+      top: -30%;
+
+      @include desktop {
+        top: -35%;
+      }
+    }
+  }
+
+  &__we_ride-animation,
+  &__we_hiit-animation {
+    z-index: 11;
+  }
+
+  &__we_ride,
+  &__we_ride-animation {
+    width: $we-ride-image-width;
+    height: $we-ride-image-width;
+  }
+
+  &__we_hiit,
+  &__we_hiit-animation {
+    width: $we-hiit-image-width;
+    height: $we-hiit-image-width;
+  }
+
+  &__we_ride {
+    z-index: 4;
+    top: -25px;
+
+    &__image {
+      transition: all .2s;
+      border: solid 2px rgba(255, 255, 255, 0.22);
+      width: $we-ride-image-width;
+      height: $we-ride-image-width;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      border-radius: 50%;
+      position: relative;
+
+      @include desktop {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    &__image__container {
+      cursor: pointer;
+
+      &__info-background,
+      &__info {
+        top: 0;
+        width: $we-ride-image-width;
+        height: $we-ride-image-width;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0;
+        transition: all .5s;
+
+        @include desktop {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      &__info-background {
+        background-color: #000000;
+        border-radius: 50%;
+      }
+
+      &__info {
+        div {
+          margin: 3rem 0 0 0;
+        }
+
+        p {
+          color: $white;
+          font-weight: $light-weight;
+          margin: 0 0 .5rem 0;
+        }
+      }
+
+      &:hover & {
+        &__info-background {
+          opacity: .5;
+        }
+
+        &__info {
+          opacity: 1;
+        }
+      }
+    }
+
+    @include desktop {
+      top: -5px;
+    }
+  }
+
+  &__we_hiit {
+    z-index: 4;
+    position: absolute;
+    top: 12rem;
+    left: 5rem;
+
+    &__image {
+      border: solid 2px rgba(255, 255, 255, 0.22);
+      width: $we-hiit-image-width;
+      height: $we-hiit-image-width;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      border-radius: 50%;
+
+      @include desktop {
+        width: $we-hiit-image-width;
+      }
+    }
+
+    @include desktop {
+      top: 20px;
+      left: 0;
+      width: 100%;
+    }
+
+    &__image__container {
+      cursor: pointer;
+
+      &__info-background,
+      &__info {
+        top: 0;
+        width: $we-hiit-image-width;
+        height: $we-hiit-image-width;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0;
+        transition: all .5s;
+      }
+
+      &__info-background {
+        background-color: #000000;
+        border-radius: 50%;
+      }
+
+      &__info {
+        div {
+          margin: 1rem 0 0 0;
+        }
+
+        p {
+          color: $white;
+          font-weight: $light-weight;
+          margin: 0 0 .5rem 0;
+        }
+      }
+
+      &:hover & {
+        &__info-background {
+          opacity: .5;
+        }
+
+        &__info {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

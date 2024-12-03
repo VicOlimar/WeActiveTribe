@@ -1,0 +1,21 @@
+.lessons {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        .btn {
+            height: 50px;
+            width: 230px;
+        }
+    }
+    &__calendar {
+        display: flex;
+        justify-content: center;
+        .rlc-calendar {
+            width: 282px;
+            border-radius: 10px;
+        }
+        .rlc-days-label {
+            display: flex;
+        }
+    }
+}

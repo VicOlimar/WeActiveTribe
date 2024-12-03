@@ -1,0 +1,33 @@
+.btn {
+    border: 0px solid black !important;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid black;
+    vertical-align: middle !important;
+}
+
+.table thead th {
+    vertical-align: middle;
+    border-bottom: 1px solid black;
+    margin-top: 5vh;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to top, #c10c90, #944d9e);
+}
+
+.header-title {
+    margin-bottom: 3vh;
+    width: fit-content;
+    height: 31px;
+    font-family: Raleway;
+    font-size: 42px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #151515;
+}

@@ -1,0 +1,48 @@
+@import 'src/shared/variables.scss';
+
+.paragraph {
+
+  &__title {
+    font-size: $font-big;
+    font-weight: $light-weight;
+    margin: 2rem 10%;
+
+    &-white {
+      color: $white;
+    }
+
+    &-black {
+      color: $text-black;
+    }
+  }
+
+  &__text {
+    margin: 1rem 0;
+    line-height: 2;
+    text-align: justify;
+
+    &-white {
+      color: $white;
+    }
+
+    &-black {
+      color: $text-black;
+    }
+  }
+
+  &__terms {
+    margin: 1rem 3rem;
+
+    li {
+      margin: 1rem 0;
+    }
+
+    &-white {
+      color: $white;
+    }
+
+    &-black {
+      color: $text-black;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "src/shared/variables.scss";
+
+.we_hiit {
+  position: relative;
+  text-align: center;
+  min-height: 50vh;
+
+  path:hover,
+  text:hover {
+    cursor: pointer;
+  }
+
+  path {
+    fill: none;
+  }
+
+  &__layout {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .place {
+    rect,
+    text {
+      transition: fill 0.3s;
+    }
+
+    rect:hover {
+      fill: $we-hiit-color;
+    }
+
+    text {
+      fill: $white;
+      stroke-width: 1;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      rect {
+        fill: $we-hiit-color;
+      }
+    }
+
+    &__reserved {
+      rect {
+        fill: $we-hiit-color;
+        cursor: none;
+      }
+
+      text {
+        fill: $white;
+        cursor: none;
+      }
+
+      rect:hover,
+      text:hover {
+        cursor: default;
+      }
+    }
+
+    &__hidden {
+      rect {
+        fill: $red;
+        cursor: none;
+      }
+
+      text {
+        fill: $white;
+        cursor: none;
+      }
+
+      rect:hover {
+        cursor: default;
+      }
+    }
+
+    &__locked {
+      rect {
+        fill: $gray;
+        cursor: pointer;
+      }
+
+      text {
+        fill: $white;
+        cursor: pointer;
+      }
+
+      rect:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @include desktop {
+    padding: 5rem 0 0 0;
+  }
+}

@@ -1,0 +1,136 @@
+@import "src/shared/variables.scss";
+
+$card-transition: all 0.3s ease-in-out;
+
+@mixin transition {
+  -webkit-transition: $card-transition;
+  -moz-transition: $card-transition;
+  -o-transition: $card-transition;
+  transition: $card-transition;
+}
+
+.credit-header {
+  background-color: #4d2d8f;
+  color: $white;
+  padding: 0.4rem 0;
+  border-radius: 5px 5px 0 0;
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include transition;
+
+  h4,
+  h5 {
+    color: $white;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    line-height: 1;
+  }
+
+  .first-ride {
+    margin: 1.5rem 0;
+    font-size: 40px;
+  }
+
+  h5 {
+    font-weight: 300;
+  }
+
+  &-special {
+    padding: 0.4rem 0;
+    border-radius: 5px 5px 0 0;
+    min-height: 87px;
+
+    background: linear-gradient(124deg, #ed1a59, #944e9e, #4067b1);
+    background-color: transparent;
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 4s ease infinite;
+    -z-animation: rainbow 4s ease infinite;
+    -o-animation: rainbow 4s ease infinite;
+    animation: rainbow 4s ease infinite;
+
+    @include transition;
+
+    h4,
+    h5 {
+      color: $white;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 2px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h5 {
+      font-weight: 300;
+    }
+
+    &__special_text {
+      font-size: 40px;
+      
+
+      &__scondary_text {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      h4 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &-buen-fin {
+    padding: 0.2rem 0;
+    border-radius: 5px 5px 0 0;
+
+    background: linear-gradient(124deg, #ed1a59, #944e9e, #4067b1);
+    background-color: transparent;
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 4s ease infinite;
+    -z-animation: rainbow 4s ease infinite;
+    -o-animation: rainbow 4s ease infinite;
+    animation: rainbow 4s ease infinite;
+
+    @include transition;
+
+    h4,
+    h5 {
+      color: $white;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 60px;
+      font-weight: 600;
+      margin-bottom: 2px;
+      line-height: 1;
+    }
+  }
+
+  @include desktop {
+    padding: 0 0.4rem;
+
+    h4 {
+      font-size: $font-extra-big;
+    }
+
+    h5 {
+      font-size: $font-normal;
+    }
+  }
+}

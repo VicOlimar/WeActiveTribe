@@ -1,0 +1,12 @@
+@import 'src/shared/variables.scss';
+.router-view {
+    margin-top: $navbar-height;
+    margin-left: $sidebar-width;
+    padding: 6vh;
+}
+
+@media screen and (max-width: 768px) {
+    .router-view {
+      margin-left: 0px;  
+    }
+}

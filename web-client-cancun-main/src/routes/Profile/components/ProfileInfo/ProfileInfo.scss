@@ -1,0 +1,59 @@
+@import 'src/shared/variables.scss';
+
+.profile-info {
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  display: table;
+  width: 100%;
+  padding: 5rem 7rem;
+
+  &__content {
+    display: table-cell;
+    vertical-align: middle;
+
+    &__image_container {
+      height: 100%;
+      width: 100%;
+      display: table;
+
+      div {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  &__secondary_action{
+    text-align: left;
+
+    &-center {
+      text-align: center;
+    }
+
+    @include desktop {
+      text-align: center;
+    }
+  }
+
+  &__pagination {
+    text-align: left;
+    padding: 3rem 5rem;
+
+    .pagination {
+      display: inline-flex;
+    }
+
+    @include desktop {
+      text-align: center;
+    }
+  }
+
+  @include desktop {
+    padding: 3rem 1rem;
+  }
+}

@@ -1,0 +1,8 @@
+production:
+  image: ruby:2.6
+  stage: deploy
+  script:
+  - gem install dpl
+  - dpl --provider=heroku --app=$HEROKU_PRODUCTION_APP_NAME --api-key=$HEROKU_PRODUCTION_API_KEY
+  only:
+  - main

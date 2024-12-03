@@ -1,0 +1,72 @@
+@import 'src/shared/variables.scss';
+
+.credit-selection {
+  //background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), linear-gradient(45deg, #ed1a59, #c10c90, #944e9e 49%, #4067b1);
+  background-size: cover;
+  background-position: center;
+  padding: 4.6rem 1rem;
+
+  &__close {
+    position: relative;
+    top: -3rem;
+    background: none;
+    height: 50px;
+    width: 50px;
+    border: none;
+    left: 2rem;
+
+    img {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__main-title,
+  &__subtitle {
+    text-align: center;
+    font-weight: $light-weight;
+    color: $white;
+  }
+
+  &__main-title {
+    text-transform: capitalize;
+    margin-bottom: 1.2rem;
+  }
+
+  &__description {
+    font-size: $font-medium;
+    color: $white;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: $light-weight;
+  }
+
+  &__subtitle {
+    font-weight: $medium-weight;
+    font-size: $font-big;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: $font-big;
+    color: $white;
+    text-align: center;
+    margin: 2.5rem 0;
+
+    @include desktop {
+      font-size: $font-normal;
+    }
+  }
+
+  &__descriptions {
+    padding: 1rem 0 0 0;
+  }
+
+  &__footer {
+    margin: 2rem 0 0 0;
+    background: transparent !important; // This is for a Style overriding, need fix that
+  }
+}

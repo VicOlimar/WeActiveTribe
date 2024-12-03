@@ -1,0 +1,54 @@
+<!-- BEGIN BODY // -->
+<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
+  <tr>
+    <td valign="top" class="bodyContainer">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+        <tbody class="mcnTextBlockOuter">
+          <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+              <!--[if mso]>
+              <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                <tr>
+                  <![endif]-->
+                  <!--[if mso]>
+                  <td valign="top" width="600" style="width:600px;">
+                    <![endif]-->
+                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                            <h1><span style="font-size:24px">Hola <%= name %>,</span></h1>
+                            <div class="m_2860620098513552206FormattedEmail-divider" style="background:#9f9fa9;height:1px;margin:20px 0 28px;width:24px">&nbsp;</div>
+                            <p style="margin-bottom: 40px;"><span style="font-size:20px;">
+                              <%= __('¡Gracias por tu compra en We Active Tribe!') %>
+                            </span></p>
+                            <p style="text-align: center;margin-top: 40px; font-size: 16;">Te informamos que has realizado una compra del plan <span style="font-size:16px; font-weight: bold; text-align: center;"><%= plan %></span> por un total de <span style="font-size:16px; font-weight: bold; text-align: center;">$<%= price %></span> y <span style="font-size:16px; font-weight: bold; text-align: center;"><%= credits %></span> créditos</p>
+                            <p style="text-align: center;margin-top: 40px; font-size: 16;">Fecha de expiración: <%= expires_at %> </p>
+                            </span></p>
+                            <p style="text-align: center;margin-top: 40px;"><span style="font-size:16px; text-align: center;">La fecha de expiración de tus créditos esta nombrada en la parte superior de este correo. <a class="link" href="https://www.weactive.mx" target="_blank">We Active</a>.</span></p>
+                            <p style="text-align: center;"><span style="font-size:16px;">¡Nos vemos pronto!</span></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center; padding-bottom: 50px;">
+                            <p style="font-size:14px;">Att.</p>
+                            <a href="http://www.weactive.mx" target="_blank"><img id='signatureLogo' src="<%= static_url %>/logo.png"/></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--[if mso]>
+                  </td>
+                  <![endif]-->
+                  <!--[if mso]>
+                </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- // END BODY -->

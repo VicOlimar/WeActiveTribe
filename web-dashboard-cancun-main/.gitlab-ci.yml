@@ -1,0 +1,11 @@
+before_script:
+  - gem install faraday -v 2.8.1
+
+production:
+  image: ruby:3.1
+  stage: deploy
+  script:
+  - gem install dpl
+  - dpl --provider=heroku --app=$HEROKU_PRODUCTION_APP_NAME --api-key=$HEROKU_PRODUCTION_API_KEY
+  only:
+  - main

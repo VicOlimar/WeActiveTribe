@@ -1,0 +1,99 @@
+@import "../../../../shared/variables.scss";
+
+.method {
+  &__card {
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+    margin: 5px 15px;
+    padding: 10px 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height: 110px;
+  }
+  &__cardData {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  &__cardOwner {
+    font-family: $main-font;
+    font-size: $font-normal;
+    height: 50%;
+  }
+  &__numbersContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  &__cardNumber {
+    font-family: $bold-font;
+    color: $black-gray;
+    font-size: $font-small;
+    text-align: center;
+    align-self: center;
+  }
+  &__cardExp {
+    font-family: $main-font;
+    font-size: $font-very-small;
+
+    text-align: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  &__cardLogo {
+    height: 50px;
+    width: 50px;
+  }
+  &__default {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+  }
+  &__defaultIcon {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+  }
+  &__delete {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: brown;
+
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+  }
+  &__deleteIcon {
+    width: 18px;
+    height: 18px;
+    align-self: center;
+  }
+}

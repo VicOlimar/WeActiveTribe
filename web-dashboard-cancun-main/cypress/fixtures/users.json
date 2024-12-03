@@ -1,0 +1,15 @@
+{ 
+  "admin": {
+    "email": "manuel@coatilabs.com",
+    "password": "123456789"
+  },
+  "user": {
+    "email": "manuel0@coatilabs.com",
+    "password": "123456789" 
+  },
+  "badEmail": {
+    "email":"manuelcoatilabs.com",
+    "password":"123456789"
+  }
+}
+  

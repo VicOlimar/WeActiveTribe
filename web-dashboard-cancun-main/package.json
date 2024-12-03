@@ -1,0 +1,86 @@
+{
+  "name": "we-cycling-web-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@lls/react-light-calendar": "^2.0.7",
+    "@material-ui/core": "^4.12.4",
+    "@mdi/js": "^4.5.95",
+    "@mdi/react": "^1.2.1",
+    "@types/dinero.js": "^1.4.1",
+    "@types/jest": "^24.0.16",
+    "@types/moment-timezone": "^0.5.12",
+    "@types/node": "^12.6.9",
+    "@types/react-datepicker": "^2.9.2",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-helmet": "^5.0.9",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/react-select": "^3.0.8",
+    "@types/string-strip-html": "^4.3.0",
+    "@types/yup": "^0.26.22",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "dinero.js": "^1.6.0",
+    "dotenv": "^8.0.0",
+    "font-awesome": "^4.7.0",
+    "formik": "^1.5.8",
+    "js-file-download": "^0.4.9",
+    "js-xlsx": "^0.8.22",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-available-times": "^1.2.2",
+    "react-bootstrap": "^1.0.0-beta.10",
+    "react-bootstrap-sweetalert": "^5.1.8",
+    "react-datepicker": "^2.13.0",
+    "react-dom": "^16.8.6",
+    "react-fontawesome": "^1.6.1",
+    "react-helmet": "^5.2.1",
+    "react-paginate": "^6.3.2",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-select": "^3.0.8",
+    "react-to-print": "^2.5.0",
+    "react-toastify": "^5.3.2",
+    "react-toggle-button": "^2.2.0",
+    "string-strip-html": "^4.3.11",
+    "typescript": "^3.4.5",
+    "webpack": "4.29.6",
+    "yup": "^0.27.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@bahmutov/add-typescript-to-cypress": "^2.1.2",
+    "@types/react": "^16.14.56",
+    "@types/react-paginate": "^6.2.1",
+    "cypress": "^3.8.2",
+    "parcel-bundler": "^1.12.3"
+  },
+  "engines": {
+    "node": "v14.21.2",
+    "npm": "6.14.17"
+  }
+}

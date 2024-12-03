@@ -1,0 +1,15 @@
+@import 'src/shared/variables.scss';
+
+.section-error__container {
+  padding: 3rem 0;
+  width: 100%;
+  display: table;
+
+  div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: $font-big;
+    color: $white;
+  }
+}

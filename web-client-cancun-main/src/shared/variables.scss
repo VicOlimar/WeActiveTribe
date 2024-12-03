@@ -1,0 +1,139 @@
+$gradient: linear-gradient(45deg, #541051, #391859, #1a1c71);
+$policies-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)),
+linear-gradient(45deg, #ed1a59, #c10c90, #944e9e 49%, #4067b1);
+$black: #000000;
+$white: #ffffff;
+$red: #ff0000;
+
+$text-primary: #212121;
+$primary-color: #58318b;
+$we-ride-color: $primary-color;
+$we-hiit-color: #04108e;
+$gray: #757575;
+$background-black: #171717;
+$color-highlight: $red;
+
+// studios gradients
+$we-ride-gradient: linear-gradient(45deg, #541051, #391859, #1a1c71);
+$we-hiit-gradient: linear-gradient(45deg, $we-hiit-color, #391859, $we-ride-color);
+
+// Breakpoints
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200;
+
+@mixin mobile {
+  @media (max-width: $xs) {
+    @content;
+  }
+}
+
+@mixin tabled {
+  @media (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+
+// Font color
+$text-black: #212121;
+$text-accent: #5d3188;
+
+// navbar
+$navbar-height: 126px;
+
+// Box shadows
+$box-shadow: 0 0 33.4px 4.6px rgba(1, 0, 2, 0.3);
+
+// Font Family
+$font-family: "Raleway",
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif !default;
+
+// Fonts weight
+$light-weight: 300;
+$medium-weight: 500;
+$bold-weight: 700;
+
+// Fonts sizes
+$font-very-small: 12px;
+$font-small: 14px;
+$font-normal: 16px;
+$font-medium: 18px;
+$font-big: 24px;
+$font-extra-big: 28px;
+
+// Helpers
+$full-height-without-navbar: calc(100vh - #{$navbar-height});
+$font-transform: scale(1, 0.5);
+
+// Animation Keyframes
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%
+  }
+
+  50% {
+    background-position: 100% 19%
+  }
+
+  100% {
+    background-position: 0% 82%
+  }
+}
+
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%
+  }
+
+  50% {
+    background-position: 100% 19%
+  }
+
+  100% {
+    background-position: 0% 82%
+  }
+}
+
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%
+  }
+
+  50% {
+    background-position: 100% 19%
+  }
+
+  100% {
+    background-position: 0% 82%
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%
+  }
+
+  50% {
+    background-position: 100% 19%
+  }
+
+  100% {
+    background-position: 0% 82%
+  }
+}

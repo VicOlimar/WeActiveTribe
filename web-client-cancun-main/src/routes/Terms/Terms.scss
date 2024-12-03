@@ -1,0 +1,23 @@
+@import 'src/shared/variables.scss';
+
+.terms {
+  padding: 5rem 0;
+  color: $white;
+  background-image: $policies-gradient;
+
+  &__logo_container {
+    text-align: center;
+    &__image {
+      padding: 0 0 1rem 0;
+      margin: auto;
+    }
+  }
+
+  &__title {
+    margin: 5rem 0;
+    text-align: center;
+    font-size: $font-extra-big;
+    font-weight: $light-weight;
+    font-family: $font-family;
+  }
+}

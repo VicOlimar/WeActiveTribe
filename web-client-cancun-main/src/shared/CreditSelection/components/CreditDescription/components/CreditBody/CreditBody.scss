@@ -1,0 +1,86 @@
+@import 'src/shared/variables.scss';
+
+.credit-body {
+  border-radius: 0 0 5px 5px;
+  padding: 2.3rem 0;
+
+  &__plan-price,
+  &__plan-expires-numbers {
+    text-align: center;
+    font-weight: 300;
+  }
+
+  &__plan {
+    &-paypal {
+      margin: 0;
+      text-align: center;
+      font-size: $font-very-small;
+
+      img {
+        padding-top: 10px;
+        margin: auto;
+        width: 90px;
+        display: block;
+        filter: brightness(0) invert(1);
+      }
+
+      @include desktop {
+        margin-top: 5px;
+
+        img {
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+
+  &__plan-price {
+    font-size: 22px;
+    margin-bottom: 5px;
+
+    &__special {
+      font-size: $font-normal;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: $font-medium;
+    }
+  }
+
+  &__image-container {
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  @include desktop {
+    &__plan_info {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    &__image-container {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 1rem 0;
+
+      img {
+        width: 80px;
+      }
+    }
+
+    &__plan-price,
+    &__plan-expires-numbers {
+      font-size: $font-small;
+      margin: 0;
+    }
+
+    &__plan-price {
+      font-size: $font-normal;
+    }
+  }
+
+  &__buen-fin {
+    width: 70%;
+    margin: auto;
+  }
+}

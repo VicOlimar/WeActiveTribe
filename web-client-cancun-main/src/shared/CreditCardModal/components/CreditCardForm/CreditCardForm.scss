@@ -1,0 +1,91 @@
+@import 'src/shared/variables.scss';
+
+.credit_card__form {
+  padding: 1rem 3rem 2rem 3rem;
+
+  &__buy {
+    color: #fffeff;
+    border-radius: 7px !important;
+    margin: 1.2rem 0 0 0;
+    height: 36px;
+    padding: 0 0;
+    z-index: 0;
+    display: block;
+    font-size: 15px;
+  }
+
+  &__paypal {
+    height: 45px;
+    margin: 1.2rem 0 0 0;
+
+    &__message {
+      font-size: $font-medium;
+    }
+
+    &-hidde {
+      display: none;
+    }
+  }
+
+  &__divider {
+    position: absolute;
+    right: -5px;
+    top: 30%;
+  }
+
+  &__expiration,
+  &__cvc {
+    margin: .5rem .2rem;
+    font-weight: $light-weight;
+  }
+
+  &__expiration {
+    text-align: left;
+  }
+
+  &__cvc {
+    text-align: right;
+  }
+
+  &__checkbox {
+    font-size: 12px;
+    margin-top: 2rem;
+    margin-left: 1.3rem;
+  }
+
+  &__link {
+    font-size: $font-very-small;
+    color: $primary-color;
+
+    &:hover {
+      text-decoration: none;
+      color: $primary-color;
+    }
+  }
+
+  &__card_logo {
+    float: left;
+    display: inline-flex;
+    height: 66px;
+
+    & img {
+      vertical-align: middle;
+      margin: auto;
+
+      @include desktop {
+        width: 100%;
+      }
+    }
+  }
+
+  &__stripe-element {
+    border: solid 1px #f0f0f0;
+    padding: 12.4px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+
+  @include desktop {
+    padding: 1rem .3rem 2rem .3rem;
+  }
+}

@@ -1,0 +1,22 @@
+@import "src/shared/variables.scss";
+
+.we-alerts {
+  &__info {
+    background-color: $primary-color;
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.swal2-popup {
+  background-color: transparent !important;
+  background: $gradient !important;
+  //background-image: $policies-gradient !important;
+}
+
+.swal2-popup .swal2-content {
+  color: $white !important;
+}

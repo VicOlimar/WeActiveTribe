@@ -1,0 +1,34 @@
+@import "../../../../shared/variables.scss";
+
+.purchase {
+  &__element {
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+    margin: 5px 0;
+    padding: 10px 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  &__data {
+    display: flex;
+    justify-content: center;
+  }
+  &__normalText {
+    font-family: $main-font;
+    font-size: $font-small;
+  }
+  &__importantText {
+    font-family: $bold-font;
+    font-size: $font-normal;
+  }
+  &__cardLogo {
+    height: 50px;
+    width: 50px;
+  }
+}

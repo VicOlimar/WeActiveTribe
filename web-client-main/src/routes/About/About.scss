@@ -1,0 +1,63 @@
+@import 'src/shared/variables.scss';
+
+.about {
+  padding: 5rem 0;
+  color: $white;
+  background-image: $policies-gradient;
+
+  &__logo_container {
+    text-align: center;
+
+    &__image {
+      padding: 0 0 1rem 0;
+      margin: auto;
+
+      @include desktop {
+        width: 100%;
+      }
+    }
+  }
+
+  &__title {
+    margin: 5rem 0 3rem 0;
+    text-align: center;
+    font-size: $font-extra-big;
+    font-weight: $light-weight;
+    font-family: $font-family;
+  }
+
+  &__subtitle {
+    margin: 5rem 0 3rem 0;
+    text-align: center;
+    font-size: $font-big;
+    font-weight: $light-weight;
+    font-family: $font-family;
+  }
+
+  &__studio_container {
+    padding: 3rem 0;
+    text-align: center;
+
+    &__logo {
+      width: 350px;
+    }
+
+    &__team{
+      width: 600px;
+    }
+  }
+
+  &__text {
+    margin: 1rem 0;
+    line-height: 2;
+    text-align: justify;
+
+    &-white {
+      color: $white;
+    }
+
+    &-black {
+      color: $text-black;
+    }
+  }
+}

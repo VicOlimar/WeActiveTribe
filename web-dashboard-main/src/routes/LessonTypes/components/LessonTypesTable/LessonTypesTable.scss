@@ -1,0 +1,12 @@
+.lesson_types_table {
+  &__buttons {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    button {
+      border: none;
+      background-color: transparent;
+    }
+  }
+}

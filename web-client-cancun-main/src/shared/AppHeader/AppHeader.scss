@@ -1,0 +1,39 @@
+@import 'src/shared/variables.scss';
+
+.app-header {
+  min-height: 68px;
+  padding: 0 3em;
+  margin: 0;
+  width: 100%;
+  color: $white;
+  background-image: $we-ride-gradient;
+
+  &-we-ride {
+    background-image: $we-ride-gradient;
+  }
+
+  &-we-hiit {
+    background-image: $we-hiit-gradient;
+  }
+
+  &__left {
+    text-align: center;
+
+    @include desktop {
+      margin: 1rem 0 0 0;
+    }
+  }
+
+  &__right {
+    text-align: right;
+
+    @include desktop {
+      margin: 1rem 0;
+      text-align: center;
+    }
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}

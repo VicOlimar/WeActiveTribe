@@ -1,0 +1,83 @@
+@import "src/shared/variables.scss";
+
+.special-message {
+  //background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), linear-gradient(45deg, #ed1a59, #c10c90, #944e9e 49%, #4067b1);
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1rem;
+  min-height: 600px;
+
+  &__close {
+    position: relative;
+    top: -3rem;
+    background: none;
+    height: 50px;
+    width: 50px;
+    border: none;
+    left: 2rem;
+
+    img {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      top: -2rem;
+      left: 1rem;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+      top: -2rem;
+      left: 1rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      top: -1rem;
+      left: 0rem;
+    }
+  }
+
+  &__main-title,
+  &__subtitle {
+    text-align: center;
+    font-weight: $light-weight;
+    color: $white;
+  }
+
+  &__main-title {
+    //text-transform: capitalize;
+    margin-bottom: 1.2rem;
+  }
+
+  &__subtitle {
+    font-weight: $medium-weight;
+    font-size: $font-big;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: $font-big;
+    color: $white;
+    text-align: center;
+    margin: 2.5rem 0;
+
+    @include desktop {
+      font-size: $font-normal;
+    }
+  }
+
+  &__list {
+    padding-top: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    list-style: decimal;
+
+    li {
+      margin: 5px 0;
+      color: $white;
+    }
+  }
+}

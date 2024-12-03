@@ -1,0 +1,25 @@
+@import 'src/shared/variables.scss';
+
+.profile-button {
+  margin: 2rem 0;
+  color: $white;
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: solid 1px #f6f6f6;
+  background-color: transparent;
+  font-size: $font-small;
+
+  img {
+    width: 12px;
+    margin: 0 0 2px 5px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    color: $gray;
+    border-color: $gray;
+  }
+}

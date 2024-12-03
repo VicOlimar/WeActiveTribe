@@ -1,0 +1,147 @@
+@import 'src/shared/variables.scss';
+
+.login {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgb(231, 231, 193);
+    background-size: cover;
+    &__container {
+        &__card {
+            -webkit-box-shadow: 0px 10px 31px -4px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 10px 31px -4px rgba(0,0,0,0.75);
+            box-shadow: 0px 10px 31px -4px rgba(0,0,0,0.75);            
+            background-color: $white;
+            padding: 5%;
+            width: 400px;
+            height: 400px;
+            border-radius: 10px;
+            border: 1px solid #45454b;
+            color: $black;
+            font-weight: (1, 2);
+            &__success-message {
+                color: $color-highlight;
+                font-size: 18px;
+                margin: 1rem 0;
+                text-align: center;
+            }
+
+            &__error-message {
+                color: $color-highlight;
+                font-size: 16px;
+                margin: 0 0 1rem 0;
+                text-align: center;
+            }
+
+            &__title {
+                text-align: center;
+                margin-bottom: 30px;
+                color: black;
+
+                img {
+                    height: 50px;
+                }
+            }
+
+            &__subtitle {
+                text-align: center;
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 13px;
+                margin-bottom: 10px;
+                color: white;
+            }
+
+            &__body {
+                &__form {
+                    &__container {
+                        width: 70%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    &__form-check {
+                        margin-left: 5px;
+                        margin-bottom: 20px;
+                    }
+
+                    &__form-check-label {
+                        font-size: 13px;
+                        color: white;
+                    }
+
+                    &__form-control {
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 30px;
+                    }
+
+                    &__email_input {
+                        margin-bottom: 0;
+                    }
+
+                    &__error-message {
+                        margin: 5px 5px;
+                        color: #ff6223;
+                    }
+                    &__flex-row-btn {
+                        display: flex;
+                        justify-content: center;
+                        .btn {
+                            width: 90%;
+                            height: 50%;
+                        }
+                    }
+                    &__input{
+                        margin-top: 20px;
+                        width: 100%;
+                        height: 50px;
+                        border-radius: 5px;
+                        border: 1px solid #f0f0f0;
+                        text-align: center;
+                        justify-content: center;
+                        input{
+                            color: #C058AB;
+                        }
+                    }
+                    &__flex-button-row{
+                        display: flex;
+                        justify-content: center;
+                        &__button {
+                            margin-top: 30px;
+                            width: 100%;
+                            height: 50px;
+                            border-radius: 5px;
+                            border: none;
+                            background-color: black;
+                            color: white;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__centered {
+            position: absolute !important;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 520px) {
+    .login {
+        &__container{
+            &__card {
+                padding-top: 100px;
+                width: 100%;
+                height: 100%;
+                min-width: 100%;
+                overflow-x: hidden;
+            }
+        }
+    }
+}

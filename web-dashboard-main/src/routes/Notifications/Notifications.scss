@@ -1,0 +1,79 @@
+@import "./../../shared/variables.scss";
+
+.notifications {
+  font-family: Raleway;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &__title {
+      margin-bottom: 5vh;
+    }
+  }
+
+  &__description {
+  }
+
+  &__subtitle {
+    font-family: Raleway;
+    font-weight: 300;
+  }
+
+  &__form_container {
+    margin: 2rem 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 2rem;
+  }
+
+  &__send_button {
+    margin-top: 1rem;
+    border: solid $primary-color 1px !important; // All important styles is because bootstrap styles
+    background: transparent;
+    background-color: transparent !important;
+    background-image: none;
+    color: $primary-color !important;
+
+    &:hover {
+      background-color: $primary-color !important;
+      color: $white !important;
+    }
+
+    &:disabled{
+      background-color: transparent !important;
+      color: $primary-color !important;
+      cursor: default;
+    }
+  }
+
+  &__toggle_message {
+    padding: 0.5rem 0 1rem 0;
+  }
+
+  &__users_list {
+    width: 100%;
+  }
+
+  &__users_message {
+    padding: 1.5rem 0 .5rem 0;
+  }
+
+  &__users_table {
+    margin-top: 1rem;
+  }
+
+  &__remove_button {
+    background: none;
+    border: none;
+  }
+
+  .btn-primary {
+    background-image: none;
+
+    h2 {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}

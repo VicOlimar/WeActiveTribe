@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "533670478440",
+    "firebase_url": "https://we-active-732c3.firebaseio.com",
+    "project_id": "we-active-732c3",
+    "storage_bucket": "we-active-732c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533670478440:android:432172eab4fbe660cb31dd",
+        "android_client_info": {
+          "package_name": "com.coatilabs.weactive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533670478440-59l3aa76l6qiugnrob9rskh8mv8hohi1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGHDItA7ifjo2zD9_B0pIgImAMRSBzpHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533670478440-59l3aa76l6qiugnrob9rskh8mv8hohi1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

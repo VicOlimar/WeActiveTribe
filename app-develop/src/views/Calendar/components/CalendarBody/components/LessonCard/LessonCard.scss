@@ -1,0 +1,157 @@
+@import "src/shared/variables.scss";
+
+.lesson__card {
+  @mixin lesson_name_text {
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    font-size: $font-very-small;
+  }
+
+  &-fill {
+    width: 110px;
+  }
+
+  &-padding {
+    padding: 1rem;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-normal,
+  &-not-available {
+    width: 100px;
+    margin: 5px;
+    font-family: Raleway-Regular;
+  }
+
+  &-normal {
+    background-color: $white;
+
+    &__hour {
+      text-align: center;
+      font-size: $font-small;
+      font-weight: $bold-weight;
+      font-family: Raleway-Regular;
+    }
+
+    &__instructor_name,
+    &__lessons {
+      font-size: $font-small;
+    }
+
+    &__instructor_name {
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    &__lessons {
+      text-align: center;
+    }
+
+    &-we-ride,
+    &-we-hiit {
+      &__empty_name_container,
+      &__name_container {
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        min-height: 55px;
+      }
+
+      &__name_container {
+        &-text {
+          @include lesson_name_text();
+        }
+      }
+
+      &__special_container {
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        min-height: 55px;
+
+        &-text {
+          @include lesson_name_text();
+        }
+      }
+    }
+
+    &-we-ride {
+      &__name_container {
+        background-color: $we-ride-color;
+      }
+    }
+
+    &-we-hiit {
+      &__name_container {
+        background-color: $we-hiit-color;
+      }
+    }
+  }
+
+  &-not-available {
+    background-color: #323232;
+
+    &__hour,
+    &__instructor_name,
+    &__lessons {
+      color: $white;
+    }
+
+    &__hour {
+      text-align: center;
+      font-size: $font-normal;
+      font-weight: $bold-weight;
+    }
+
+    &__instructor_name,
+    &__lessons {
+      font-size: $font-small;
+    }
+
+    &__instructor_name {
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    &__lessons {
+      text-align: center;
+      color: $white;
+    }
+
+    &-we-ride,
+    &-we-hiit {
+      &__empty_name_container,
+      &__name_container {
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        min-height: 55px;
+      }
+
+      &__name_container {
+        background-color: $we-ride-color;
+
+        &-text {
+          @include lesson_name_text();
+        }
+      }
+
+      &__special_container {
+        align-items: center;
+        justify-content: center;
+        min-height: 55px;
+        padding: 0.5rem;
+        text-align: center;
+        color: $white;
+        background-color: $we-ride-color;
+
+        &-text {
+          @include lesson_name_text();
+        }
+      }
+    }
+  }
+}

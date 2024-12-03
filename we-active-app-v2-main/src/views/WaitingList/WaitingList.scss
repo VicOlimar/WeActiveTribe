@@ -1,0 +1,23 @@
+@import '../../shared/variables.scss';
+
+.waiting-list {
+  &__content {
+    background-color: $black-gray;
+    padding: 5%;
+  }
+  &__empty {
+    background-color: $black-gray;
+    height: 100%;
+    padding: 5px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  &__text {
+    color: white;
+    font-family: $main-font;
+    text-align: center;
+  }
+}

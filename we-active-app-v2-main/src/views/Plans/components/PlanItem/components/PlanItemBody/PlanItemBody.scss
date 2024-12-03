@@ -1,0 +1,65 @@
+@import '../../../../../../shared/variables.scss';
+
+.item-body {
+  &__special {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: $black;
+    border-radius: 0 0 10px 10px;
+
+    &__logo,
+    &__info {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+
+    &__price,
+    &__validity {
+      color: $white;
+      text-align: center;
+    }
+
+    &__image {
+      margin: auto;
+    }
+  }
+
+  &__normal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 80px;
+    background-color: $black;
+    border-radius: 0 10px 10px 0;
+
+    &__logo {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 2;
+    }
+
+    &__price,
+    &__validity {
+      color: $white;
+      text-align: center;
+    }
+
+    &__image {
+      margin-left: 40px;
+    }
+  }
+}

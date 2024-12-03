@@ -1,0 +1,53 @@
+@import "../../../../shared/variables.scss";
+
+.credit_detail_modal {
+  &__centeredView {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+  }
+
+  &__modalView {
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 35px;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__closeButton {
+    margin-top: 20px;
+    background-color: $primary-color;
+    border-radius: 20px;
+    padding: 10px 30px;
+  }
+
+  &__textStyle {
+    color: #ffffff;
+  }
+}
+
+.credit_type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__text, &__value {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  &__text {
+    color: $primary-color;
+  }
+  &__value {
+    margin-left: 50px;
+    font-weight: 500;
+  }
+}
